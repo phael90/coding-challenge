@@ -1,6 +1,7 @@
-const _ = require('lodash');
+// const _ = require('lodash');
+import _ from 'lodash';
 
-const groupArrayElements = function (elements, divider) {
+const groupArrayElements = (elements, divider) => {
     const elementsDuplicate = _.cloneDeep(elements);
 
     if (!_.isInteger(divider) || !_.isArray(elementsDuplicate) || (divider <= 0)) return [];
@@ -16,4 +17,4 @@ const groupArrayElements = function (elements, divider) {
     return finalArr;    
 };
 
-module.exports = { groupArrayElements };
+export default groupArrayElements;

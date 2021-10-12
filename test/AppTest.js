@@ -1,5 +1,5 @@
-const assert = require("chai").assert;
-const groupArrayElements = require("../app.js").groupArrayElements;
+import { assert } from 'chai';
+import groupArrayElements from "../app.js";
 
 describe("App", () => {
     describe("groupArrayElements", () => {
